@@ -1,0 +1,12 @@
+D:\Programming\Screen Resolution\ScreenResolution\bin\Debug\ScreenResolution.exe.config
+D:\Programming\Screen Resolution\ScreenResolution\obj\Debug\ScreenResolution.csprojResolveAssemblyReference.cache
+D:\Programming\Screen Resolution\ScreenResolution\bin\Debug\ScreenResolution.exe
+D:\Programming\Screen Resolution\ScreenResolution\bin\Debug\ScreenResolution.pdb
+D:\Programming\Screen Resolution\ScreenResolution\obj\Debug\ScreenResolution.exe
+D:\Programming\Screen Resolution\ScreenResolution\obj\Debug\ScreenResolution.pdb
+C:\Projects\Git\ScreenResolution\ScreenResolution\bin\Debug\ScreenResolution.exe.config
+C:\Projects\Git\ScreenResolution\ScreenResolution\obj\Debug\ScreenResolution.exe
+C:\Projects\Git\ScreenResolution\ScreenResolution\obj\Debug\ScreenResolution.pdb
+C:\Projects\Git\ScreenResolution\ScreenResolution\bin\Debug\ScreenResolution.exe
+C:\Projects\Git\ScreenResolution\ScreenResolution\bin\Debug\ScreenResolution.pdb
+C:\Projects\Git\ScreenResolution\ScreenResolution\obj\Debug\ScreenResolution.csprojResolveAssemblyReference.cache
