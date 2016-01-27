@@ -73,7 +73,7 @@ namespace ScreenResolution
 
     
 
-	class Resolution
+	class Resolution:IComparable
 	{
 
         public int Width { get; set; }
@@ -98,16 +98,11 @@ namespace ScreenResolution
             while (0 != User_32.EnumDisplaySettings(null, i, ref vDevMode))
             {
                 if (vDevMode.dmDisplayFrequency == 60) 
-                {
-                //Console.WriteLine("Width:{0} Height:{1} Color:{2} Frequency:{3}",
-                //                        vDevMode.dmPelsWidth,
-                //                        vDevMode.dmPelsHeight,
-                //                        1 << vDevMode.dmBitsPerPel, vDevMode.dmDisplayFrequency
-                //                    );
+                {              
 
                 Resolution res = new Resolution(vDevMode.dmPelsWidth, vDevMode.dmPelsHeight);
 
-                if (!availableResolutions.Any(r => r.Width == res.Width)) 
+                if (!(availableResolutions.Any(r => r.Width == res.Width) || availableResolutions.Any(r => r.Height == res.Height))) 
                 availableResolutions.Add(res);
 
                 }
@@ -172,6 +167,19 @@ namespace ScreenResolution
                 }
 
             }
+        }
+
+        public int CompareTo(object obj)
+        {
+            if (obj == null) return 1;
+
+            Resolution otherResolution = obj as Resolution;
+            if (otherResolution != null)
+                return this.Width.CompareTo(otherResolution.Width);
+            else
+                throw new ArgumentException("Object is not a Resolution");
+
+
         }
 
     }
